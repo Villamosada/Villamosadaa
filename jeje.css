@@ -1,0 +1,263 @@
+/* Body font */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Headings (fancy tourism vibe) */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+/* Header title */
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Section titles */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav a {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover effect (extra pogi points 😎) */
+nav a:hover {
+    color: #ffd700;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    
+    /* Gradient beach vibe */
+    background: linear-gradient(to bottom, #00c6ff, #0072ff, #fceabb);
+}
+
+header {
+    background: #00aaff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* GLOBAL FADE-IN ANIMATION */
+@keyframes fadeInAll {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply to whole page */
+body {
+    animation: fadeInAll 1s ease-in;
+}
+
+/* Optional: smoother stagger effect */
+header {
+    animation: fadeInAll 1s ease-in;
+}
+
+section {
+    animation: fadeInAll 1.2s ease-in;
+}
+
+footer {
+    animation: fadeInAll 1.4s ease-in;
+}
+
+
+
+/* GRID GALLERY */
+.section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Images */
+.section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Hover effect (zoom 😎) */
+.section img:hover {
+    transform: scale(1.05);
+}
+
+/* Captions */
+.section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form button {
+    background: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0077b6;
+}
+
+/* External links */
+.links {
+    list-style: none;
+    padding: 0;
+}
+
+.links a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: 600;
+}
+
+.links a:hover {
+    color: #ff8800;
+}
+
+/* Social links */
+.social a {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.social a:hover {
+    color: #00aaff;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+    letter-spacing: 0.5px;
+}
+
+/* Hover effect */
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 114, 255, 0.4);
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Click effect */
+.btn:active {
+    transform: scale(0.96);
+}
+.slideshow {
+    width: 90%;
+    height: 350px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* all slides */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fade 12s infinite;
+}
+
+/* your images */
+.slide1 {
+    background-image: url("bora.jpeg");
+    animation-delay: 0s;
+}
+
+.slide2 {
+    background-image: url("ra.jpeg");
+    animation-delay: 4s;
+}
+
+.slide3 {
+    background-image: url("cay.jpeg");
+    animation-delay: 8s;
+}
+
+/* fade animation */
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
