@@ -236,7 +236,7 @@ footer {
     animation: fade 12s infinite;
 }
 
-/* your images */
+/* slideshow */
 .slide1 {
     background-image: url("bora.jpeg");
     animation-delay: 0s;
