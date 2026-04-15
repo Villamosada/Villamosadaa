@@ -260,4 +260,29 @@ footer {
     40% { opacity: 0; }
     100% { opacity: 0; }
 }
+.intro {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f1e9; /* soft sandy/beige tone */
+    color: #333;
+}
+
+.intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #d4a017; /* golden accent */
+}
+
+.intro p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
 
